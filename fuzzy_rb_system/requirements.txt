@@ -1,0 +1,6 @@
+numpy==1.21.6
+scipy==1.10.1
+matplotlib==3.7.4
+seaborn==0.13.0
+scikit-fuzzy==0.4.2
+tqdm==4.66.1
