@@ -1,0 +1,30 @@
+# Carpetas de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas grandes o cache
+.cache/
+.ipynb_checkpoints/
+
+# Configuración de VSCode
+.vscode/
+
+# Archivos que no quieres subir
+*.zip
+*.csv
+*.sav
