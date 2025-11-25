@@ -14,7 +14,7 @@ partitions=[np.array([0.        , 0.34269456, 0.50332616, 0.91489319]), np.array
 
 attributes= [[61.66667, 140.0], [16.609, 43.3959], [18.0, 45.2], [1.0, 6.0], [27.8571, 42.4286]]
 
-f= open("reglas_caso.txt", 'w')
+f= open("rule_case.txt", 'w')
 
 for k, partition in enumerate(partitions):
     
@@ -24,7 +24,7 @@ for k, partition in enumerate(partitions):
     for i in range(fuzzyset_size):
         anchors_temp=anchors.copy()    
         anchors_temp[i:i+3]=anchors[i:i+3]*(attributes[k][1]-attributes[k][0])+attributes[k][0]
-        triangulo=anchors_temp[i:i+3]
-        f.write(str(triangulo[1])+' '+str(triangulo[1])+' '+ 
-                str(triangulo[1]-triangulo[0])+' '+ str(triangulo[2]-triangulo[1])+ '\n')
-        print(triangulo)
+        triangle=anchors_temp[i:i+3]
+        f.write(str(triangle[1])+' '+str(triangle[1])+' '+ 
+                str(triangle[1]-triangle[0])+' '+ str(triangle[2]-triangle[1])+ '\n')
+        print(triangle)
